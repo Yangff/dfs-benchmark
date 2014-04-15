@@ -31,14 +31,13 @@ def doTest(name, t):
 	os.chdir("../")
 	return ret/float(t)
 print("Test1 Union-Set");
-#cleanup()
-#compile("UnionSet", "dfs", False)
-#compile("UnionSet", "pdfs", False)
-
-#t1 = doTest("dfs", 10)
-#t2 = doTest("pdfs", 10)
-#print("Test1 Result: Dfs: %lf, PDfs:%lf"%(t1,t2))
-#cleanup()
+cleanup()
+compile("UnionSet", "dfs", False)
+compile("UnionSet", "pdfs", False)
+t1 = doTest("dfs", 10)
+t2 = doTest("pdfs", 10)
+print("Test1 Result: Dfs: %lf, PDfs:%lf"%(t1,t2))
+cleanup()
 print("Test2 Tarjan");
 cleanup()
 compile("Tarjan", "dm", True)
